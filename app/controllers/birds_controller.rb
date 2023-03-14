@@ -35,6 +35,7 @@ class BirdsController < ApplicationController
   end
 
   private
+  
   def render_unprocessable_entity_response(invalid)
     render json: {errors: invalid.record.full_messages}, status: :unprocessable_entity
   end
